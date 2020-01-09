@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <title>RepeatExplorer server</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style/base.css" type="text/css" />
+    <style type="text/css">
+      p {
+      max-width: 700px;
+      }
+      ul {
+      max-width: 700px;
+      }
+      html, body {
+      height: 100%;
+      }
+      html {
+      display: table;
+      margin: auto;
+      }
+      body {
+      display: table-cell;
+      vertical-align: middle;
+      }
+      .frame {
+
+      width: 100%;
+      border: 0px;
+      white-space: nowrap;
+      text-align: center; margin: 1em 0;
+      }
+      .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      }
+      img {
+      background: #FFFFFF;
+      vertical-align: middle;
+      }
+
+      table {
+      border-collapse: collapse;
+      width: 100%;
+      }
+      th.date, th.date {
+      width: 15%
+      }
+      th.subject {
+      width: 70%; /* Not necessary, since only 70% width remains */
+}
+
+      tr {
+      border-bottom: 1px solid #ccc;
+      }
+
+      th {
+      text-align: left;    
+      }
+      th, td {
+      padding: 5px;
+      }
+
+
+    </style>
+  </head>
+
+
+
+
+  <body>
+    <div class="document">
+      <img src="images//umbr_programs_icons/RE_header.png"
+	         alt="Welcome to RepeatExplorer"
+	         width="700px"/>
+      <br/>
+      <p>
+	      Developed and maintained by the <a
+			  target="_blank" href="http://w3lamc.umbr.cas.cz/lamc/">Laboratory
+	      of Molecular Cytogenetics</a>,  Institute of Plant Molecular Biology,
+	      Biology Centre AS CR, Ceske Budejovice, Czech Republic.
+      </p>
+
+      <p>
+	      Galaxy portal is provided within <a target="_blank" href="https://www.elixir-czech.cz/">Elixir CZ project</a>. Galaxy server is maintained by <a target="_blank" href="https://www.cesnet.cz/">CESNET</a> and <a target="_blank" href="https://www.cerit-sc.cz/en/index.html">CERIT-SC</a> that are participants of this project. 
+      </p>
+      <hr></hr>
+
+
+      <p>
+
+	      RepeatExplorer includes utilities for <a target="_blank"
+				href="http://www.biomedcentral.com/1471-2105/11/378"><strong>Graph-based
+	      clustering and characterization of repetitive sequences in
+	      next-generation sequencing data</strong> </a> and tools for the detection of
+	      transposable element protein coding domains. Before you can use Galaxy portal,
+	      you have to register and your e-mail address have to be verified. This is quite
+	      simple process and takes few minutes. All users can use advanced features like
+	      data and workflow sharing. Additionally, all registered users are free to use up to 50Gb.
+	      Read <a target="_blank" href="http://repeatexplorer.org"> RepeatExplorer documentation </a> before analyzing data!
+
+      </p>
+
+      <hr></hr>
+
+
+
+      <h2><a href="news.html">News</a></h2>
+
+      <table style="width:100%">
+      <tr>
+        <th class="date"></th>
+        <th class="subject"></th>
+      </tr>
+        <tr>
+          <td>Jan 13, 2020</td>
+          <td><h4>Galaxy server was updated to version 19.09</h4></td>
+        </tr>
+        <tr>
+          <td>Jan 13, 2020</td>
+          <td><h4>RepeatExplorer2 and TAREAN tools were updated to version 2.3.7</h4>
+          See changelog for detail description of included changes. Previous versions can be found in Obsolete tools section
+          </td>
+        </tr>
+        <tr>
+          <td>Jan 8, 2020</td>
+          <td><h4>RepeatExplorer tools are now available in Galaxy toolshed</h4>
+          <p>Packages repeatexplorer2, dante and re_utils can be installed from Galaxy toolshed  to custom Galaxy instance if you prefer analysis using RepeatExplorer on on your server.</p> </td>
+        </tr>
+        <tr>
+          <td>Nov 10, 2019</td>
+          <td><h4>Data quota increased to 200G</h4>
+          Data quota for registered users was increased from 50G to 200G to enable easier analysis of larger datasets</td>
+        </tr>
+      </table>
+
+
+	    <h2>How to Use RepeatExplorer</h2>
+	    <ul>
+	      <li><a target="_blank" href="http://w3lamc.umbr.cas.cz/repeatexplorer/?page_id=166">Documentation and training information</a>
+	      </li>
+	      
+	      <li> To learn how RepeatExplorer was used in genomes analyses, check <a href = "http://repeatexplorer.org/?page_id=46" target = "_blank"> selected publications</a>
+        </li>
+
+        <li><a target="_blank" href="http://repeatexplorer.org/?page_id=179"> The
+	      impact of genome coverage and sequence read sampling on
+	      reproducibility of repeat identification.</a></li>
+
+	      <li> Official <a href="https://galaxyproject.org/", target="_blank", >Galaxy Project</a> website with informations how to use Galaxy data analysis platform </li>
+
+	      
+	      <li>If you want to upload data via FTP, but you don't know how to set up your ftp client, please visit <a href="https://wiki.metacentrum.cz/wiki/Galaxy_application#FTP_upload">https://wiki.metacentrum.cz/wiki/Galaxy_application#FTP_upload</a></li>
+
+        <li>If you preffer to use command line version of RepeatExplorer tools,
+        see the source <a href="https://bitbucket.org/petrnovak/repex_tarean/"> code repository</a> for installation instruction</li>
+	    </ul>
+
+      <h3>Changelog </h3>
+
+      Information about changes in RepeatExplorer programs can be found in repository <a target="_blank" href="https://bitbucket.org/petrnovak/repex_tarean/src/devel/CHANGELOG.md"> changelog.</a>
+
+
+
+      <hr></hr>
+      <h2>REXdb: a reference database of transposable element protein domains</h2>
+      <p>
+        RepeatExplorer2 and  DANTE
+        tools utilize reference database of transposable elements (REXdb) for identification and classification of mobile elements.
+
+        Database is described in the article:  Systematic survey of plant LTR-retrotransposons elucidates phylogenetic relationships of their polyprotein domains and provides a reference for element classification, <em>Mobile DNA 2019, 10:1 <a target="_blank" href="https://doi.org/10.1186/s13100-018-0144-1">https://doi.org/10.1186/s13100-018-0144-1</a></em>. Standalone database can be downloaded
+        <a target="_blank"  href="http://repeatexplorer.org/?page_id=918"> here </a>.
+
+
+      </p>
+      <hr></hr>
+	    <h2>Contact information</h2>
+	    If you need help with RepeatExplorer or you want to report a problem, please contact <a href="mailto:regalaxy@rt.cesnet.cz">server administrator</a>.
+	    <hr></hr>
+
+	    <h2>How to Cite</h2>
+	    If you use RepeatExplorer in your work please cite:
+      <p>
+	      Novak, P., Neumann, P., Pech, J., Steinhaisl, J., Macas, J. (2013) -
+	      <a
+	          href="http://bioinformatics.oxfordjournals.org/content/early/2013/02/01/bioinformatics.btt054.abstract">RepeatExplorer:
+	      a Galaxy-based web server for genome-wide characterization of
+	      eukaryotic repetitive elements from next generation sequence reads.</a>
+	      <i>Bioinformatics</i>
+
+      </p>
+
+
+	    <br/>
+
+      <p>
+	      RepeatExplorer is a part of services provided by <a target="_blank" href="https://www.elixir-czech.cz"> ELIXIR </a>- European research infrastructure for biological information. For other services provided by ELIXIR's Czech Republic Node visit <a target="_blank" href="http://www.elixir-czech.cz/services">  www.elixir-czech.cz/services </a>. The user of Galaxy based RepeatExplorer is obliged to use the following acknowledgement formula in all your publications created with the support of RepeatExplorer. <strong>Computational resources were provided by the ELIXIR-CZ project (LM2015047), part of the international ELIXIR infrastructure.</strong>
+      </p>
+
+	    <br/>
+
+	    <div class="frame">
+	      <a href="http://www.elixir-czech.cz" target="_blank">
+	        <span class="helper"></span>
+	        <img align="middle" src="images/umbr_programs_icons/ELIXIR_CZECHREPUBLIC_white_background_small.png" alt="ELIXIR"/>
+	      </a>
+      </div>
+
+
+
+	    <hr></hr>
+	    <h2>References</h2>
+
+	    <h3>The principles of RepeatExplorer approach are described in:</h3>
+
+      <p>
+	      Novak, P., Neumann, P., Macas, J. (2010) - <a
+		    href="http://www.biomedcentral.com/1471-2105/11/378">Graph-based
+	      clustering and characterization of repetitive sequences in
+	      next-generation sequencing data</a>. <i>BMC Bioinformatics</i> <b>11</b>:
+	      378.
+      </p>
+
+      <p>
+	      Novak, P., Neumann, P., Pech, J., Steinhaisl, J., Macas, J. (2013) -
+	      <a href="http://bioinformatics.oxfordjournals.org/content/early/2013/02/01/bioinformatics.btt054.abstract">RepeatExplorer:
+	      a Galaxy-based web server for genome-wide characterization of
+	      eukaryotic repetitive elements from next generation sequence reads.</a>
+	      <i>Bioinformatics</i>
+
+      </p>
+      <h3>Clustering is performed using Louvain method:</h3>
+      <p>
+	      Blondel V.D., Guillaume J., Lambiotte R., Lefebvre E. (2008) Fast
+	      unfolding of communities in large networks. <i> J. Stat. Mech.</i>:
+	      P10008
+      </p>
+
+	    <hr></hr>
+
+	    <h2> Terms of Use </h2>
+      <p>
+	      RepeatExplorer is provided as free, public, Internet accessible
+	      service, in the hope that it will be useful, but WITHOUT ANY
+	      WARRANTY. Data transfer are encrypted, but data storage are not. If there
+	      are restrictions on the way your research data can be stored and
+	      used, please consult your local institutional review board or the
+	      project PI before uploading it to this Galaxy server. If you have
+	      protected data, large data storage requirements, or short deadlines
+	      you are encouraged to setup your own local Galaxy instance with
+	      RepeatExplorer Alternatively, you can install only RepeatExplorer and
+	      use its <em>command line version</em>. If you need help with
+	      RepeatExplorer or you want to report a problem, please contact <a
+				href="mailto:regalaxy@rt.cesnet.cz">server administrator</a>
+      </p>
+    </div>    
+  </body>
+</html>
